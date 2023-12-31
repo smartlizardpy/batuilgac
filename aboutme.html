@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batu Ilgaç| Benim Hakkımda</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #000000;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav {
+            background-color: #292828;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #050266;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            float: none;
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+    
+       p{
+        color: #292828;
+        font-family:'Courier New', Courier, monospace;
+        font-size: 20px;   
+    }
+    img{
+        float: right;
+        width: 300px;
+    }
+   footer{
+    position: absolute
+    top 40rem;
+   }
+   </style>
+    <script>
+       
+        function toggleDropdown() {
+            var dropdown = document.getElementById("myDropdown");
+            dropdown.style.display = (dropdown.style.display === "block") ? "none" : "block";
+        }
+
+       
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.style.display === "block") {
+                        openDropdown.style.display = "none";
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <header>
+        <h1>Batu Ilgaç | Benim Hakkımda</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="aboutme.html">About Me</a>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="toggleDropdown()">Social Media</button>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="https://discord.gg/ASUpxBq9">Discord  Hesabım</a>
+                <a href="#">Player's Instagram</a>
+                <a href="https://github.com/404">futbolcu kartı</a>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <h2>Benim Hakkımda</h2>
+        <p>Merhaba, benim adım Batu Ilgaç. Şu anda 9 yaşındayım ve futbol oynamak benim için vazgeçilmez bir tutkudur. Beşiktaş'ın U-10 takımında forma giyiyorum ve son maçta attığım frikikle bir hayli dikkat çekmiş olabilirim. Neyse ki, o frikiği direkten döndü, ama bir sonraki sefere umarım golle sonuçlanır!
+            <img src="batu.HEIC" alt="batu ve kupası">
+            <img src="batu2.jpeg" alt="batu ve takımı">
+            <img src="batu3.jpeg" alt="batu ve babası">
+            Aslında futbol kariyerime Fenerbahçe'nin altyapısında başladım. Ancak bir süre sonra, yeni bir macera arayışı içinde Başakspor'a transfer oldum. Burada, kendimi daha da geliştirmek ve farklı bir futbol deneyimi yaşamak istedim. Fenerbahçe'nin altyapısından ayrılmak zor oldu, ancak Başakspor'da yeni arkadaşlar edinmek ve yeni hedeflere koşmak beni heyecanlandırıyor.
+            
+            Başakspor formasıyla sahada 18 numarayı taşıyorum. Bu benim için gerçekten özel bir sayı çünkü genellikle takımın önemli oyuncularına verilen bir numara. Her maçta bu formayı giydiğimde, takımım için elimden gelenin en iyisini yapmaya çalışıyorum. Sahada olmak ve futbol oynamak beni gerçekten mutlu ediyor.
+         
+            Takımımızla birlikte iki kez Kuşadası'na gitme şansı bulduk ve her iki seferinde de büyük zaferlere imza attık.</p>
+
+            <p>İlk ziyaretimizde, Kuşadası'nda düzenlenen bir turnuvaya katıldık. Takım arkadaşlarımla birlikte zorlu mücadelelerden geçtik, ancak dayanışma ve kararlılıkla turnuvayı birincilikle tamamladık. Kuşadası'nın güzel atmosferinde, takım ruhumuzun zirveye çıktığı bir zafer elde ettik.
+             
+            İkinci Kuşadası ziyaretimizde de aynı heyecanı yaşadık. Önceki zaferin bize kattığı motivasyonla, daha sıkı antrenmanlar yapıp birlikte çalışmanın gücünü hissettik. Bu sefer de turnuvada gösterdiğimiz performansla birinci olmayı başardık. İki zafer de benim için unutulmaz anılardı ve futbol kariyerimdeki başarılarımın önemli bir parçasıydı.</p>
+            
+            
+            <p> zaferler, sadece sahada değil, aynı zamanda dış sahalarda bir arada olmanın, arkadaşlık ve takım ruhunun ne kadar önemli olduğunu gösterdi. Futbol, sadece topun olduğu yeşil sahalarda değil, aynı zamanda birlikte geçirilen özel anlarda da anlam kazanıyor..Gelecekte büyük bir futbolcu olma hayaliyle yaşıyorum. Umarım bir gün Beşiktaş'ın A Takımı'nda veya belki de daha büyük bir takımda oynama şansı bulurum. Ama şu anki odak noktam, her antrenmanda ve maçta kendimi geliştirip takımıma en iyi şekilde katkıda bulunmak. Belki bir gün bu satırları okuyanlar, adımı daha da fazla duyar ve "Batu Ilgaç" dediklerinde futbolu hatırlarlar.</p>
+        
+    </section>
+
+    <footer>
+        <a href="https://github.com/smartlizardpy/smartlizardpy/blob/main/README.md">Developers Github Page</a>
+        <p>&copy; 2023 Ozan Kaygusuz. All rights reserved.</p>
+    </footer>
+</body>
+</html>
